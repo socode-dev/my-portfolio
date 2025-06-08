@@ -1,12 +1,29 @@
-# React + Vite
+# SOCODE Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive front-end developer portfolio built with:
 
-Currently, two official plugins are available:
+- ⚛️ React (Vite)
+- 🎨 TailwindCSS
+- 🌀 Framer Motion
+- 🧭 React Router DOM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚧 Status
 
-## Expanding the ESLint configuration
+**Phase 1 complete** — project initialized and environment configured.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started
+
+1. Clone this repo
+2. Run `npm install`
+3. Start dev server: `npm run dev`
+
+## 📌 To-Do Next
+
+- [ ] Layout & Routing
+- [ ] Design system
+- [ ] Animations
+- [ ] Projects & content
+
+---
+
+> Built and maintained by [Samuel Oso (SOCODE)](https://your-portfolio-link.com)

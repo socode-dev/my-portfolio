@@ -1,11 +1,30 @@
-import { Router, Routes } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import { AnimatePresence } from "framer-motion";
 
-function App() {
+const App = () => {
+  const location = useLocation();
+
   return (
     <>
-      <Router></Router>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
     </>
   );
-}
+};
 
 export default App;
