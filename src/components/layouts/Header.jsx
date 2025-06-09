@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Hamburger from "../ui/Hamburger";
 import { useNavigate } from "react-router-dom";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    width > 768 && setIsMenuOpen(false);
+  }, [width, isMenuOpen]);
 
   return (
     <motion.header
@@ -31,7 +37,7 @@ const Header = () => {
 
       {/* Large Screen Nav */}
       <nav>
-        <ul className="list-none flex space-x-3 font-bold text-gray-600 max-md:hidden">
+        <ul className="list-none flex space-x-3 font-bold text-[rgb(var(--color-muted))] max-md:hidden">
           <Navbar />
         </ul>
       </nav>
@@ -40,7 +46,7 @@ const Header = () => {
       <button
         onClick={() => navigate("/contact")}
         type="button"
-        className="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-gray-600 transition cursor-pointer shadow-md shadow-gray-400 rounded-full max-md:hidden"
+        className="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-[rgb(var(--color-muted))] transition cursor-pointer shadow-md shadow-[rgb(var(--color-muted))] rounded-full max-md:hidden"
       >
         <MessageOutlinedIcon sx={{ color: "white", fontSize: "22px" }} />
       </button>
@@ -49,7 +55,7 @@ const Header = () => {
       <button
         onClick={() => setIsMenuOpen((prev) => !prev)}
         type="button"
-        className="md:hidden cursor-pointer relative w-8 h-4 flex flex-col justify-between items-center"
+        className="md:hidden cursor-pointer relative w-8 h-4 flex flex-col justify-between items-center group"
       >
         <Hamburger isMenuOpen={isMenuOpen} />
       </button>
@@ -60,9 +66,9 @@ const Header = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-white absolute top-11 left-0 right-0 z-50 py-4 px-10"
+          className="bg-[rgb(var(--color-bg))] absolute top-11 left-0 right-0 z-50 py-4 px-10"
         >
-          <ul className="list-none flex flex-col space-y-3 font-bold text-gray-600 ">
+          <ul className="list-none flex flex-col space-y-3 font-bold text-[rgb(var(--color-muted))] ">
             <Navbar closeMenu={() => setIsMenuOpen(false)} />
           </ul>
         </motion.nav>

@@ -11,7 +11,9 @@ const Navbar = ({ closeMenu }) => {
           onClick={closeMenu}
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-purple-600" : "hover:text-purple-800 transition"
+            isActive
+              ? "text-[rgb(var(--color-brand))]"
+              : "hover:text-[rgb(var(--color-brand-light))] text-[rgb(var(--color-text))] transition"
           }
         >
           Home
@@ -22,7 +24,9 @@ const Navbar = ({ closeMenu }) => {
           onClick={closeMenu}
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-purple-600" : "hover:text-purple-800 transition"
+            isActive
+              ? "text-[rgb(var(--color-brand))]"
+              : "hover:text-[rgb(var(--color-brand-light))] text-[rgb(var(--color-text))] transition"
           }
         >
           About
@@ -33,7 +37,9 @@ const Navbar = ({ closeMenu }) => {
           onClick={closeMenu}
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-purple-600" : "hover:text-purple-800 transition"
+            isActive
+              ? "text-[rgb(var(--color-brand))]"
+              : "hover:text-[rgb(var(--color-brand-light))] text-[rgb(var(--color-text))] transition"
           }
         >
           Projects
@@ -45,7 +51,9 @@ const Navbar = ({ closeMenu }) => {
             onClick={closeMenu}
             to="/contact"
             className={({ isActive }) =>
-              isActive ? "text-purple-600" : "hover:text-purple-800 transition"
+              isActive
+                ? "text-[rgb(var(--color-brand))]"
+                : "hover:text-[rgb(var(--color-brand-light))] text-[rgb(var(--color-text))] transition"
             }
           >
             Contact

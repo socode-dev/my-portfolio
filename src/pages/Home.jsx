@@ -1,14 +1,27 @@
 import { motion } from "framer-motion";
+import SectionWrapper from "../components/layouts/SectionWrapper";
+import Hero from "../components/home/Hero";
+import Projects from "../components/home/Projects";
 
 const Home = () => {
-  <motion.main
-    initial={{ opacity: 0, y: "-100%" }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: "-100%" }}
-    transition={{ duration: 0.4, ease: "easeOut" }}
-  >
-    This is Home Page
-  </motion.main>;
+  return (
+    <motion.main
+      initial={{ opacity: 0, y: "-100%" }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: "-100%" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+    >
+      {/* Hero Section */}
+      <SectionWrapper className="flex flex-col md:flex-row items-center gap-10">
+        <Hero />
+      </SectionWrapper>
+
+      {/* Projects Section */}
+      <SectionWrapper>
+        <Projects />
+      </SectionWrapper>
+    </motion.main>
+  );
 };
 
 export default Home;

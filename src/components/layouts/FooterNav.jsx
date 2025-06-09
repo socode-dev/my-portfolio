@@ -6,7 +6,9 @@ const FooterNav = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive ? "text-purple-600" : "text-gray-600 hover:text-purple-800"
+          isActive
+            ? "text-[rgb(var(--color-brand))]"
+            : "text-[rgb(var(--color-text))] hover:text-[rgb(var(--color-brand-light))]"
         }
       >
         Home
@@ -14,7 +16,9 @@ const FooterNav = () => {
       <NavLink
         to="/about"
         className={({ isActive }) =>
-          isActive ? "text-purple-600" : "text-gray-600 hover:text-purple-800"
+          isActive
+            ? "text-[rgb(var(--color-brand))]"
+            : "text-[rgb(var(--color-text))] hover:text-[rgb(var(--color-brand-light))]"
         }
       >
         About
@@ -22,7 +26,9 @@ const FooterNav = () => {
       <NavLink
         to="/projects"
         className={({ isActive }) =>
-          isActive ? "text-purple-600" : "text-gray-600 hover:text-purple-800"
+          isActive
+            ? "text-[rgb(var(--color-brand))]"
+            : "text-[rgb(var(--color-text))] hover:text-[rgb(var(--color-brand-light))]"
         }
       >
         Projects
@@ -30,7 +36,9 @@ const FooterNav = () => {
       <NavLink
         to="/contact"
         className={({ isActive }) =>
-          isActive ? "text-purple-600" : "text-gray-600 hover:text-purple-800"
+          isActive
+            ? "text-[rgb(var(--color-brand))]"
+            : "text-[rgb(var(--color-text))] hover:text-[rgb(var(--color-brand-light))]"
         }
       >
         Contact
