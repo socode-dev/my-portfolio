@@ -1,8 +1,8 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import FooterNav from "./FooterNav";
-import Socials from "./Socials";
+import Socials from "../ui/Socials";
 import Button from "../ui/Button";
 import { FaHeart } from "react-icons/fa6";
 
@@ -32,7 +32,7 @@ const Footer = () => {
 
       <section className="w-full flex flex-col items-center gap-4 md:flex-row md:justify-between space-y-2.5">
         <div className="space-y-4">
-          <h5 className="font-bold text-lg text-gray-600">
+          <h5 className="font-bold text-lg text-[rgb(var(--color-text))]">
             Interested in working together{" "}
             <span className="text-purple-600">?</span>
           </h5>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-gray-600 text-xs font-medium">
+        <div className="text-[rgb(var(--color-muted))] text-xs font-medium">
           <p className="">&copy; {year} All Rights Reserved</p>
           <p className="flex items-center ">
             Made with <FaHeart className="text-purple-600 mx-2" /> by Samuel

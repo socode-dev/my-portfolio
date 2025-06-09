@@ -13,7 +13,7 @@ const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaInstagram className="text-gray-600 hover:text-purple-600 text-xl cursor-pointer transition" />
+        <FaInstagram className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
       </a>
 
       <a
@@ -21,7 +21,7 @@ const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedinIn className="text-gray-600 hover:text-purple-600 text-xl cursor-pointer transition" />
+        <FaLinkedinIn className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
       </a>
 
       <a
@@ -29,14 +29,14 @@ const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub className="text-gray-600 hover:text-purple-600 text-xl cursor-pointer transition" />
+        <FaGithub className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
       </a>
       <a
         href="http://www.discord.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaDiscord className="text-gray-600 hover:text-purple-600 text-xl cursor-pointer transition" />
+        <FaDiscord className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
       </a>
     </>
   );
