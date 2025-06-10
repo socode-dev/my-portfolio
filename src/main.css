@@ -16,7 +16,12 @@
 }
 
 @layer base {
-  html {
-    font-family: var(--font-chakra);
+  html,
+  body {
+    @apply font-chakra bg-[rgb(var(--color-bg))] scroll-smooth;
+  }
+
+  .blob-bg {
+    @apply bg-[url("../public/assets/background/blob-bg-1.svg")];
   }
 }

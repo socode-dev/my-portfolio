@@ -7,8 +7,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="space-y-3 lg:w-1/2">
-        <h1 className="text-lg md:text-xl text-[rgb(var(--color-muted))]">
+      <div className="space-y-3 md:w-3/6">
+        <h1 className="text-lg font-medium text-[rgb(var(--color-muted))]">
           Hey, I'm Samuel Oso 👋🏻
         </h1>
 
@@ -16,7 +16,7 @@ const Hero = () => {
           <span className="text-[rgb(var(--color-brand))]">Front</span>end
           Developer
         </h2>
-        <p className="text-[rgb(var(--color-muted))] text-base md:text-lg">
+        <p className="text-[rgb(var(--color-muted))] text-base font-medium">
           I'm a front developer based in Nigeria. I'm passionate about creating
           thoughtful and innovative web experiences that make a lasting impact.
         </p>
@@ -36,12 +36,12 @@ const Hero = () => {
 
       <div className="lg:w-1/2">
         <div className="w-72 h-72 border border-[rgb(var(--color-muted))] rounded-full flex justify-center items-center">
-          <div className="w-4/5 h-4/5 rounded-full p-2 flex justify-center items-center bg-gradient-to-t from-gray-400 to-gray-100">
+          <div className="w-5/6 h-5/6 rounded-full p-2 flex justify-center items-center bg-gradient-to-t from-gray-400 to-gray-100">
             <img
               src={myPortrait}
               alt="Samuel Oso's Picture"
               loading="lazy"
-              className="w-full h-full rounded-full"
+              className="w-full h-full rounded-full backdrop-grayscale-75 brightness-85"
             />
           </div>
         </div>
