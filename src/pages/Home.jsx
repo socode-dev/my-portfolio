@@ -12,12 +12,12 @@ const Home = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
       {/* Hero Section */}
-      <SectionWrapper className="flex flex-col md:flex-row items-center gap-10">
+      <SectionWrapper className="flex flex-col md:flex-row md:justify-between items-center gap-10">
         <Hero />
       </SectionWrapper>
 
       {/* Projects Section */}
-      <SectionWrapper>
+      <SectionWrapper className="space-y-8">
         <Projects />
       </SectionWrapper>
     </motion.main>
