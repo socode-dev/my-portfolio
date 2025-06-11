@@ -21,7 +21,7 @@ const Footer = () => {
       className="w-full bg-[rgb(var(--color-bg))] flex flex-col items-center text-center space-y-8 p-5"
     >
       <section className="w-full flex flex-col items-center gap-4 md:flex-row md:justify-between space-y-2.5">
-        <ul className="flex space-x-4 font-bold text-sm">
+        <ul className="flex space-x-4 font-bold text-base">
           <FooterNav />
         </ul>
 
@@ -32,7 +32,7 @@ const Footer = () => {
 
       <section className="w-full flex flex-col items-center gap-4 md:flex-row md:justify-between space-y-2.5">
         <div className="space-y-4">
-          <h5 className="font-bold text-lg text-[rgb(var(--color-text))]">
+          <h5 className="font-bold text-lg text-[rgb(var(--color-muted))]">
             Interested in working together{" "}
             <span className="text-purple-600">?</span>
           </h5>

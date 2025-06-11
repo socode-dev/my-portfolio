@@ -19,13 +19,13 @@ const ProjectShowcase = ({ project }) => {
       viewport={{ once: true, amount: 0.3 }}
       className="space-y-4"
     >
-      <div className="w-full h-[350px] rounded-xl blob-bg bg-no-repeat bg-cover bg-center py-6 px-8">
+      <div className="w-full h-[300px] rounded-xl blob-bg bg-no-repeat bg-cover bg-center py-6 px-10">
         <motion.img
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           src={image}
           alt={title}
-          className="w-full h-full rounded-xl"
+          className="w-full h-full rounded-xl shadow-lg"
         />
       </div>
 

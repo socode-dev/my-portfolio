@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import SectionWrapper from "../components/layouts/SectionWrapper";
+import AboutMe from "../components/about/AboutMe";
+import MyStack from "../components/about/MyStack";
+import MyStory from "../components/about/MyStory";
 
 const About = () => {
   return (
@@ -8,7 +12,17 @@ const About = () => {
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      This is About Page
+      <SectionWrapper className="space-y-8">
+        <AboutMe />
+      </SectionWrapper>
+
+      <SectionWrapper className="space-y-8">
+        <MyStack />
+      </SectionWrapper>
+
+      <SectionWrapper className="space-y-8">
+        <MyStory />
+      </SectionWrapper>
     </motion.main>
   );
 };
