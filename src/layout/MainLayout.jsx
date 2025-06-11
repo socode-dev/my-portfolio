@@ -8,7 +8,7 @@ const MainLayout = () => {
     <div className="w-full h-screen flex flex-col">
       <Header />
       <ScrollToTop />
-      <main className="grow">
+      <main className="grow bg-[rgb(var(--color-bg))]">
         <Outlet />
       </main>
       <Footer />
