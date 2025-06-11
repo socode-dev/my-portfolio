@@ -18,7 +18,7 @@ const Footer = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full flex flex-col items-center text-center space-y-8 p-5"
+      className="w-full bg-[rgb(var(--color-bg))] flex flex-col items-center text-center space-y-8 p-5"
     >
       <section className="w-full flex flex-col items-center gap-4 md:flex-row md:justify-between space-y-2.5">
         <ul className="flex space-x-4 font-bold text-sm">

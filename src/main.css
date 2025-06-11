@@ -15,13 +15,13 @@
   --color-muted: 107 114 128;
 }
 
-@layer base {
-  html,
-  body {
-    @apply font-chakra bg-[rgb(var(--color-bg))] scroll-smooth;
-  }
+html,
+body {
+  font-family: var(--font-chakra);
+  background-color: var(--color-bg);
+  scroll-behavior: smooth;
+}
 
-  .blob-bg {
-    @apply bg-[url("../public/assets/background/blob-bg-1.svg")];
-  }
+.blob-bg {
+  background-image: url("../public/assets/background/blob-bg-1.svg");
 }

@@ -20,7 +20,7 @@ const Header = () => {
       initial={{ y: "-100%", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="relative top-0 left-0 right-0 z-30 flex justify-between items-center px-3 py-2"
+      className="relative top-0 left-0 right-0 z-30 bg-[rgb(var(--color-bg))] flex justify-between items-center p-3"
     >
       <button
         onClick={() => navigate("/")}
@@ -66,7 +66,7 @@ const Header = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-[rgb(var(--color-bg))] absolute top-11 left-0 right-0 z-50 py-4 px-10"
+          className="absolute top-12 left-0 right-0 z-50 bg-inherit py-4 px-10"
         >
           <ul className="list-none flex flex-col space-y-3 font-bold text-[rgb(var(--color-muted))] ">
             <Navbar closeMenu={() => setIsMenuOpen(false)} />
