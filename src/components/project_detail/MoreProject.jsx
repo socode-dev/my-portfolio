@@ -1,10 +1,10 @@
 import { motion, useInView } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
 
-const AnimatedProject = ({ project }) => {
+const MoreProject = ({ project }) => {
   const navigate = useNavigate();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -45,4 +45,4 @@ const AnimatedProject = ({ project }) => {
   );
 };
 
-export default AnimatedProject;
+export default MoreProject;
