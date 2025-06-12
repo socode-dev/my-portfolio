@@ -8,10 +8,14 @@ const MyStory = () => {
 
       <p className="text-base text-[rgb(var(--color-muted))] font-medium">
         I began my front-end development journey in 2024 with more questions
-        than answers. Early on, I struggled with layout issues, broken
-        components, and self-doubt. But what kept me going was the belief that
-        if I stuck with it, I could build things that solve real problems.{" "}
-        <br /> Through countless bugs and late nights, I've grown into a
+        than answers. Early on, I{" "}
+        <span className="text-[rgb(var(--color-brand))]">struggled</span> with
+        layout issues, broken components, and self-doubt. But what kept me going
+        was the belief that if I stuck with it, I could build things that{" "}
+        <span className="text-[rgb(var(--color-brand))]">
+          solve real problems
+        </span>
+        . <br /> Through countless bugs and late nights, I've grown into a
         developer who crafts{" "}
         <span className="text-[rgb(var(--color-brand))]">clean</span>,{" "}
         <span className="text-[rgb(var(--color-brand))]">responsive</span>, and{" "}
