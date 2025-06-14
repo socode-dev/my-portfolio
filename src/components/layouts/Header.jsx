@@ -27,12 +27,10 @@ const Header = () => {
         type="button"
         className="cursor-pointer"
       >
-        <img
-          src="../../../favicon.ico"
-          alt="Samuel Oso Code(SOCODE) logo"
-          loading="lazy"
-          className="w-12 h-7"
-        />
+        <h1 className="text-lg text-[rgb(var(--color-text))] font-bold">
+          {`>SOCODE`}
+          <span className="text-2xl text-[rgb(var(--color-brand))]">.</span>
+        </h1>
       </button>
 
       {/* Large Screen Nav */}

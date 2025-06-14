@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { projectData } from "../../data/projectData";
 import ProjectShowcase from "./ProjectShowcase";
 
 const Projects = () => {
-  //   const [projects, setProjects] = useState([]);
-  //   setProjects(projectData.reverse());
   const projects = [...projectData].reverse();
 
   return (

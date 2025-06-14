@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/layouts/Header";
 import Footer from "../components/layouts/Footer";
 import ScrollToTop from "./ScrollToTop";
+import { AnimatePresence } from "framer-motion";
 
 const MainLayout = () => {
   return (
@@ -9,7 +10,9 @@ const MainLayout = () => {
       <Header />
       <ScrollToTop />
       <main className="grow bg-[rgb(var(--color-bg))]">
-        <Outlet />
+        <AnimatePresence mode="wait">
+          <Outlet key={location.pathname} />
+        </AnimatePresence>
       </main>
       <Footer />
     </div>
