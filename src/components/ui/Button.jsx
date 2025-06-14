@@ -5,6 +5,7 @@ import { hoverTap } from "../../lib/motionVariants";
 const Button = ({
   children,
   type = "button",
+  disabled = "false",
   className = "",
   variant = "primary",
   onClick,
@@ -30,6 +31,7 @@ const Button = ({
       transition={{ duration: 0.1 }}
       onClick={onClick}
       type={type}
+      disabled={disabled}
       className={finalClass}
       {...props}
     >
