@@ -112,10 +112,12 @@ const ContactForm = ({
         </Button>
       </form>
 
-      {state.succeeded && (
+      {successMessage && !state.submitting && (
         <p className="text-sm text-green-500">{successMessage}</p>
       )}
-      {state.errors && <p className="text-sm text-red-500">{error}</p>}
+      {error && !state.submitting && (
+        <p className="text-sm text-red-500">{error}</p>
+      )}
     </>
   );
 };
