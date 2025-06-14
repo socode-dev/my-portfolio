@@ -100,7 +100,7 @@ const ContactForm = ({
           </div>
         </div>
 
-        <Button type="submit" disabled={state.submitting}>
+        <Button type="submit">
           {state.submitting ? (
             <p className="flex items-center space-x-2">
               <LoadingSpinner color="white" size={20} />
