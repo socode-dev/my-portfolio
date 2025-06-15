@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <SectionWrapper className="space-y-8">
         <AboutMe />
