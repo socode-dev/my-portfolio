@@ -25,7 +25,7 @@ const Socials = () => {
       </a>
 
       <a
-        href="https://github.com/Sammytee98?tab=repositories"
+        href="https://github.com/socode-dev?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
       >

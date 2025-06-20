@@ -8,7 +8,7 @@ export const projectData = [
     title: "Xtremefit",
     image: XtremefitImage,
     live: "https://xtremefit.vercel.app/",
-    github: "https://github.com/Sammytee98/gym-website",
+    github: "https://github.com/socode-dev/gym-website",
     note: "ALL-in-one fitness platform offering flexible memberships, trainer profiles, and guideed workouts.",
     description:
       "A modern gym website with smooth navigation, clean UI, and essential business features, It includes a services showcase, tiered membership, pricing plans, contact form, and a functional sign-up flow.",
@@ -49,7 +49,7 @@ export const projectData = [
     title: "GTS Store",
     image: GtsImage,
     live: "https://gtstore-nu.vercel.app/",
-    github: "https://github.com/Sammytee98/eCommerce-app",
+    github: "https://github.com/socode-dev/eCommerce-app",
     note: "Modern e-commerce web app with dynamic catalog, cart, and multi-step checkout experience.",
     description:
       "GTS Store is a sleek and modern e-commerce web app built with React. It features product browsing, filtering, cart & wishlist functionality, a multi-step checkout, and smooth user experience",
