@@ -1,10 +1,11 @@
-import GtsImage from "../assets/home/gtstore.png";
-import XtremefitImage from "../assets/home/xtremefit.png";
+import GtsImage from "../assets/gtstore.png";
+import XtremefitImage from "../assets/xtremefit.png";
+import SkillSyncImage from "../assets/skillsync.png";
 
 export const projectData = [
   {
     id: 1,
-    slug: "gym-website",
+    slug: "xtremefit",
     title: "Xtremefit",
     image: XtremefitImage,
     live: "https://xtremefit.vercel.app/",
@@ -45,7 +46,7 @@ export const projectData = [
   },
   {
     id: 2,
-    slug: "ecommerce-store",
+    slug: "gtstore",
     title: "GTS Store",
     image: GtsImage,
     live: "https://gtstore-nu.vercel.app/",
@@ -80,6 +81,51 @@ export const projectData = [
       "React Query",
       "Framer Motion",
       "React Hook Form",
+      "React Router DOM",
+    ],
+  },
+  {
+    id: 3,
+    slug: "skillsync",
+    title: "SkillSync",
+    image: SkillSyncImage,
+    live: "https://skillsync-one.vercel.app/",
+    github: "https://github.com/socode-dev/skillsync",
+    note: "AI-inspired resume matcher that extracts skills from your resume and matches you with real jobs.",
+    description:
+      "SkillSync is a frontend-focused resume parsing and job matching app that helps users upload a resume, extract their technical & soft skills, and find relevant remote jobs in real time.",
+    about:
+      "SkillSync is a modern web application that streamlines the job hunt experience by intelligently parsing resumes and matching candidates with real-time job listings from public APIs. Built with React and Zustand, SkillSync focuses on usability, filtering, and guided user flow to make career discovery simple and intuitive. It includes full resume-to-job matching logic, protected routes, job detail pages, and local state persistence — all powered by a polished UI and dark mode support.",
+    features: [
+      "Resume Parsing: Upload PDF, DOCX, or paste raw text to extract skills using PDF.js and Mammoth.",
+      "Skill Extraction & Editing: Extracted skills are displayed in a scrollable modal with support for adding/removing entries before matching.",
+      "Job Matching: Jobs fetched from RemoteOK and Arbeitnow APIs are matched to the user's skills with keyword logic and compatibility scoring.",
+      "Results Summary: Users get a job summary and can view matched job listings with match percentage and detailed descriptions.",
+      "Job Detail Page: Full job breakdown with styled sections, company tags, job type, and formatted content without raw HTML.",
+      "Search & Filter: Real-time keyword search and remote/on-site filter with debounce logic for performance.",
+      "Saved Jobs: Users can save job listings locally and revisit them from a dedicated page.",
+      "Flow Protection: Guarded routes prevent skipping steps; users must upload a resume to proceed.",
+      "Dark Mode & Responsive: Fully responsive layout with dark/light theme toggle and polished transitions.",
+    ],
+    advantages: [
+      "Real-world Job APIs",
+      "Resume Flow Guard",
+      "Persistent State (Zustand)",
+      "Clean Architecture",
+      "Dark Mode UI",
+      "Modular Components",
+    ],
+    useCase:
+      "SkillSync is perfect as a resume-matching MVP or candidate screening tool. It’s ideal for showcasing frontend skills in file parsing, API integration, dynamic routing, persistent state, and user experience optimization. Great for resumes, portfolios, or demo platforms for job-matching startups.",
+    stacks: [
+      "Vite",
+      "Axios",
+      "React",
+      "PDF.js",
+      "Zustand",
+      "Mammoth.js",
+      "TailwindCSS",
+      "Framer Motion",
       "React Router DOM",
     ],
   },
