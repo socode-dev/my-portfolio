@@ -25,7 +25,7 @@ const ProjectShowcase = ({ project }) => {
           transition={{ duration: 0.3 }}
           src={image}
           alt={title}
-          className="w-full h-full rounded-xl shadow-lg"
+          className="w-full h-full rounded-lg shadow-xl shadow-[rgb(var(--color-brand-light))]"
         />
       </div>
 
