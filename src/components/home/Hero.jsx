@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="space-y-3 md:w-4/6">
+      <div className="space-y-3 grow">
         <h1 className="text-lg font-medium text-[rgb(var(--color-muted))]">
           Hey, I'm Samuel Oso 👋🏻
         </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="md:w-2/6">
+      <div className="">
         <div className="w-72 h-72 border border-[rgb(var(--color-muted))] rounded-full flex justify-center items-center">
           <div className="w-5/6 h-5/6 rounded-full p-2 flex justify-center items-center bg-gradient-to-t from-gray-400 to-gray-100">
             <img

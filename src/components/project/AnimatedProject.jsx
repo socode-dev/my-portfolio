@@ -19,10 +19,12 @@ const AnimatedProject = ({ project }) => {
       className="space-y-3"
     >
       <div className="w-full h-[300px] md:h-[350px] rounded-xl blob-bg bg-no-repeat bg-cover bg-center py-6 px-10">
-        <img
+        <motion.img
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
           src={image}
           alt={`${title} image`}
-          className="w-full h-full rounded-xl shadow-lg"
+          className="w-full h-full rounded-lg shadow-xl shadow-[rgb(var(--color-brand-light))]"
         />
       </div>
 
