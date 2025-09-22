@@ -15,7 +15,7 @@ const Heading = ({ title, note, live, github }) => {
 
       <div className="grow flex md:justify-end space-x-3 w-full md:w-3/6">
         <a href={live} target="_blank" rel="noopener noreferrer">
-          <Button type="button" children="Live Website" className="" />
+          <Button type="button" children="Live Demo" className="" />
         </a>
         <a href={github} target="_blank" rel="noopener noreferrer">
           <Button type="button" children="Github" variant="outline" />

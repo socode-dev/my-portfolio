@@ -5,6 +5,13 @@ import myPortrait from "../../assets/home/my-portrait.png";
 const Hero = () => {
   const navigate = useNavigate();
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = "https://drive.google.com/file/d/1ZVY1KQ-WfdHyixm45yMu3EOUuMokiosA/view?usp=sharing";
+    link.download = 'Samuel_Oso_Resume.pdf';
+    link.click();
+  }
+
   return (
     <>
       <div className="space-y-3 grow">
@@ -23,8 +30,8 @@ const Hero = () => {
 
         <div className="flex space-x-4 w-fit">
           <Button
-            onClick={() => navigate("/contact")}
-            children="Get in Touch"
+            onClick={handleResumeDownload}
+            children="View Resume"
           />
           <Button
             onClick={() => navigate("/projects")}

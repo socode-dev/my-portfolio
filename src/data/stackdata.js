@@ -1,5 +1,5 @@
 export const stacks = {
-  firstRow: ["Responsive Design", "HTML5/CSS3", "Bootstrap", "TailwindCSS"],
-  secondRow: ["JavaScript Proficiency", "ReactJS", "Collaborative Team Player"],
-  thirdRow: ["Problem Solving", "Attention to Detail", "Critical Thinking"],
+  firstRow: ["ReactJS", "JavaScript", "HTML5/CSS3", "Bootstrap", "TailwindCSS"],
+  secondRow: ["JavaScript Proficiency", "Responsive Design", "Collaborative Team Player", "User-centric", "Resilience"],
+  thirdRow: ["Problem Solving", "Attention to Detail", "Critical Thinking", "Adaptability", "Communication", "Commitment"],
 };

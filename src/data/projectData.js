@@ -1,6 +1,7 @@
 import GtsImage from "../assets/gtstore.png";
 import XtremefitImage from "../assets/xtremefit.png";
 import SkillSyncImage from "../assets/skillsync.png";
+import SmartBudgetImage from "../assets/smartbudget.png";
 
 export const projectData = [
   {
@@ -129,4 +130,46 @@ export const projectData = [
       "React Router DOM",
     ],
   },
+  {
+id: 3,
+slug: "smartbudget",
+title: "SmartBudget",
+image: SmartBudgetImage,
+live: "https://smartbudget-beta.vercel.app/",
+github: "https://github.com/socode-dev/smartbudget",
+note: "AI-powered personal finance app with forecasting, anomaly detection, and smart insights.",
+description:
+"SmartBudget helps users manage their money smarter with real-time expense tracking, personalized budget recommendations, anomaly alerts, and AI-driven forecasts. Featuring a clean, responsive UI, it bridges budgeting and predictive analytics in one platform.",
+about:
+"SmartBudget is a modern personal finance web app that combines rule-based and ML-powered insights to help users stay in control of their spending. It supports expense categorization, budget & goal tracking, cash flow forecasting, and smart recommendations. Built with a performance-first architecture, SmartBudget delivers a seamless experience across devices, enhanced with animations and in-app notifications.",
+features: [
+"Overview Dashboard: Aggregated spending summary, categorized transactions, and quick highlights.",
+"Transactions: Add, view, and manage expenses with category & monthly breakdowns.",
+"Budgets & Goals: Create and track personalized budgets/goals with threshold alerts.",
+"Smart Insights: Rule-based + ML-powered insights with anomaly detection and spend forecasting.",
+"Reports & Export: Monthly/Category-based reports with PDF export and CSV download.",
+"In-App Notifications: Real-time alerts for new insights and recommendations.",
+"Smooth UX: Page transitions and modals with Framer Motion + skeleton loaders for charts.",
+"Dark Mode: System-aware theme with persistent preference."
+],
+advantages: [
+  "Fully responsive",
+  "AI-driven insights",
+  "Practical budgeting & goal tracking",
+  "Notifications keep users proactive",
+  "Exportable financial reports",
+],
+useCase:
+"SmartBudget is designed for individuals who want more than static budgeting apps. It provides intelligent recommendations, forecasts, and real-time anomaly detection. Ideal as a showcase of how modern web apps can blend data, AI, and clean UX to deliver actionable personal finance tools.",
+stacks: [
+  "Vite",
+  "React",
+"Zustand",
+"TailwindCSS",
+"TensorFlow.js",
+"Framer Motion",
+"Chart.js + react-chartjs-2",
+"Firebase (Auth & Firestore)",
+]
+}
 ];

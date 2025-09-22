@@ -1,7 +1,10 @@
 import { projectData } from "../../data/projectData";
 import ProjectShowcase from "./ProjectShowcase";
+import Button from "../ui/Button"
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const navigate = useNavigate();
   const projects = [...projectData].reverse();
 
   return (
@@ -12,10 +15,12 @@ const Projects = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, i) => (
+        {projects?.slice(0, 2).map((project, i) => (
           <ProjectShowcase key={i} project={project} />
         ))}
       </div>
+
+      <Button onClick={() => navigate("/projects")} variant="primary" className="mx-auto">See More Projects</Button>
     </>
   );
 };
