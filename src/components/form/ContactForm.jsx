@@ -21,7 +21,7 @@ const ContactForm = ({
 
       <form
         onSubmit={onSubmit}
-        className="w-full max-w-[700px] space-y-8 rounded-lg md:shadow-lg md:px-4 py-4"
+        className="w-full max-w-4xl space-y-8 rounded-lg md:px-4 py-4"
       >
         <div className="w-full space-y-4">
           <div className="flex flex-col md:flex-row gap-4">

@@ -12,20 +12,19 @@ const Projects = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
+      className="py-8 space-y-6"
     >
       <SectionWrapper className="space-y-5">
         <h2 className="text-5xl text-[rgb(var(--color-text))] font-extrabold">
-          My <span className="text-[rgb(var(--color-brand))]">Best</span>{" "}
-          Creations
+          Things I've Built
         </h2>
         <p className="text-base text-[rgb(var(--color-muted))] font-medium">
-          Each project you see here started with a blank file &mdash; and turned
-          into something functional, responsive, and meaningful
+          From practice projects to product-grade apps, each one taught me something the previous one didn't
         </p>
       </SectionWrapper>
 
-      <SectionWrapper className="space-y-8">
-        {projects.map((project, i) => (
+      <SectionWrapper className="grid grid-cols-1 md:grid-cols-2 gap-15">
+        {projects.map((project) => (
           <AnimatedProject key={project.id} project={project} />
         ))}
       </SectionWrapper>

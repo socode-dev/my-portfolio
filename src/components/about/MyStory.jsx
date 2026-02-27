@@ -6,30 +6,24 @@ const MyStory = () => {
         <span className="text-5xl text-[rgb(var(--color-brand))]">.</span>
       </h3>
 
+      <p className="text-base text-[rgb(var(--color-muted))] font-medium mb-4">
+        In early 2024 I bought a full-stack course out of pure curiosity. I just wanted to understand how websites and applications actually worked.
+      </p>
+      
+      <p className="text-base text-[rgb(var(--color-muted))] font-medium mb-3">
+        What started as curiosity turned into something I couldn't stop doing.
+      </p>
+      
+      <p className="text-base text-[rgb(var(--color-muted))] font-medium mb-3">
+        The early days were humbling. Broken layouts, components that made no sense, bugs I couldn't explain. But I kept going because something about building things from nothing felt worth the frustration.
+      </p>
+      
+      <p className="text-base text-[rgb(var(--color-muted))] font-medium mb-3">
+        Two years in, I'm building apps with real authentication, state management, AI Integrations, and product flows that go beyond UI. I don't write custom backends, but I use Firebase to handle data, auth, and real-time flows the way a complete product needs. Projects like SmartBudget and SkillSync are things I genuinely couldn't have imagined building when I wrote my first line of code.
+      </p>
+      
       <p className="text-base text-[rgb(var(--color-muted))] font-medium">
-        I began my front-end development journey in 2024 with more questions
-        than answers. Early on, I{" "}
-        <span className="text-[rgb(var(--color-brand))]">struggled</span> with
-        layout issues, broken components, and self-doubt. But what kept me going
-        was the belief that if I stuck with it, I could build things that{" "}
-        <span className="text-[rgb(var(--color-brand))]">
-          solve real problems
-        </span>
-        . <br /> Through countless bugs and late nights, I've grown into a
-        developer who crafts{" "}
-        <span className="text-[rgb(var(--color-brand))]">clean</span>,{" "}
-        <span className="text-[rgb(var(--color-brand))]">responsive</span>, and{" "}
-        <span className="text-[rgb(var(--color-brand))]">
-          purposeful user interfaces
-        </span>{" "}
-        using tools like{" "}
-        <span className="text-[rgb(var(--color-brand))]">JavaScript</span>,{" "}
-        <span className="text-[rgb(var(--color-brand))]">ReactJS</span>,{" "}
-        <span className="text-[rgb(var(--color-brand))]">TailwindCSS</span>,{" "}
-        <span className="text-[rgb(var(--color-brand))]">Framer Motion</span>,{" "}
-        <span className="text-[rgb(var(--color-brand))]">CSS3</span>, and{" "}
-        <span className="text-[rgb(var(--color-brand))]">HTML5</span>. The
-        journey hasn't been easy - but it's been worth every line of code.
+        I'm proud of that distance. And I'm not done.
       </p>
     </>
   );

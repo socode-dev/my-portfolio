@@ -30,17 +30,7 @@ const MyStack = () => {
             </div>
           ))}
         </div>
-
-        <div className="flex whitespace-nowrap animate-scroll-left gap-2 min-w-max">
-          {thirdRow.concat(thirdRow).map((stack, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <p className="bg-[rgb(var(--color-text))] text-white text-sm font-extralight px-3 py-1 rounded-lg">
-                {stack}
-              </p>
-              <HiOutlineStar className="text-xl text-[rgb(var(--color-brand))]" />
-            </div>
-          ))}
-        </div>
+        
       </div>
     </>
   );

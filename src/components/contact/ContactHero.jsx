@@ -1,19 +1,17 @@
-import myPortrait from "../../assets/home/my-portrait.png";
+import portrait from "../../assets/portrait.jpeg";
 import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
 const ContactHero = () => {
   return (
     <>
-      <div className="space-y-4 md:w-3/6">
+      <div className="space-y-4">
         <h2 className="text-5xl md:text-6xl text-[rgb(var(--color-text))] font-extrabold">
           {" "}
           Get in Touch
           <span className="text-[rgb(var(--color-brand))]">.</span>
         </h2>
         <p className="text-[rgb(var(--color-muted))] text-base font-medium">
-          Looking to patner or work together? Reach out through the form, mail,
-          or phone and I'll get back to you in the next 48 hours.
-        </p>
+          Have a project in mind or want to work together? Reach out and I'll get back to you within 48 hours.        </p>
 
         <div className="space-y-2 w-fit">
           <a
@@ -39,11 +37,11 @@ const ContactHero = () => {
         </div>
       </div>
 
-      <div className="lg:w-1/2">
+      <div>
         <div className="w-72 h-72 border border-[rgb(var(--color-muted))] rounded-full flex justify-center items-center">
           <div className="w-5/6 h-5/6 rounded-full p-2 flex justify-center items-center bg-gradient-to-t from-gray-400 to-gray-100">
             <img
-              src={myPortrait}
+              src={portrait}
               alt="Samuel Oso's Picture"
               loading="lazy"
               className="w-full h-full rounded-full backdrop-grayscale-75 brightness-85"

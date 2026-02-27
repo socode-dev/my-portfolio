@@ -11,9 +11,10 @@ const Home = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
+      className="py-8"
     >
       {/* Hero Section */}
-      <SectionWrapper className="w-full flex flex-col md:flex-row items-center gap-10">
+      <SectionWrapper className="w-full flex flex-col md:flex-row md:justify-between items-center gap-10">
         <Hero />
       </SectionWrapper>
 
@@ -22,7 +23,7 @@ const Home = () => {
         <Projects />
       </SectionWrapper>
 
-      <SectionWrapper className="space-y-8">
+      <SectionWrapper className="space-y-8 w-full max-w-4xl">
         <Skills />
       </SectionWrapper>
     </motion.main>
