@@ -13,19 +13,15 @@ const ProjectDetail = () => {
   const project = projectData.find((project) => project.slug === slug);
 
   const moreProject = projectData.filter((project) => project.slug !== slug);
-  console.log(moreProject);
-
+ 
   const {
     image,
     title,
-    note,
-    about,
-    features,
-    advantages,
-    useCase,
-    stacks,
     live,
     github,
+    stacks,
+    description,
+    caseStudy
   } = project;
 
   return (
@@ -34,29 +30,25 @@ const ProjectDetail = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
+      className="space-y-6 py-8"
     >
       <SectionWrapper className="flex flex-col md:flex-row md:justify-between md:items-end gap-6">
-        <Heading title={title} note={note} live={live} github={github} />
+        <Heading title={title} description={description} live={live} github={github} />
       </SectionWrapper>
 
       <SectionWrapper>
-        <div className="w-full h-[250px] md:h-[300px] rounded-xl blob-bg bg-no-repeat bg-cover bg-center py-6 px-10">
+        <div className="w-full max-w-5xl h-[250px] md:h-[300px] rounded-xl blob-bg bg-no-repeat bg-cover bg-center p-6 mx-auto">
           <img
             src={image}
             alt={`${title}'s image`}
-            className="w-full h-full rounded-xl shadow-lg"
+            className="w-full h-full rounded-xl object-contain"
           />
         </div>
       </SectionWrapper>
 
-      <SectionWrapper className="relative flex flex-col md:flex-row gap-8">
+      <SectionWrapper className="relative grid grid-cols-1 md:grid-cols-5 md:h-fit gap-5">
         <Stacks stacks={stacks} />
-        <Detail
-          about={about}
-          features={features}
-          advantages={advantages}
-          useCase={useCase}
-        />
+        <Detail caseStudy={caseStudy} />
       </SectionWrapper>
 
       <SectionWrapper className="space-y-6">

@@ -1,8 +1,7 @@
 import {
   FaInstagram,
   FaLinkedinIn,
-  FaGithub,
-  FaDiscord,
+  FaGithub
 } from "react-icons/fa6";
 
 const Socials = () => {
@@ -17,7 +16,7 @@ const Socials = () => {
       </a>
 
       <a
-        href="http://www.linkedin.com/in/samuel-oso"
+        href="http://www.linkedin.com/in/samuel-frontend-engineer"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -25,18 +24,11 @@ const Socials = () => {
       </a>
 
       <a
-        href="https://github.com/socode-dev?tab=repositories"
+        href="https://github.com/socode-dev"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaGithub className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
-      </a>
-      <a
-        href="http://www.discord.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaDiscord className="text-[rgb(var(--color-muted))] hover:text-[rgb(var(--color-brand))] text-xl cursor-pointer transition" />
       </a>
     </>
   );

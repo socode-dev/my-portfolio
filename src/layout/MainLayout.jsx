@@ -9,7 +9,7 @@ const MainLayout = () => {
     <div className="w-full h-screen flex flex-col">
       <Header />
       <ScrollToTop />
-      <main className="grow bg-[rgb(var(--color-bg))]">
+      <main className="grow bg-[rgb(var(--color-bg))] px-4 sm:px-6 lg:px-16">
         <AnimatePresence mode="wait">
           <Outlet key={location.pathname} />
         </AnimatePresence>

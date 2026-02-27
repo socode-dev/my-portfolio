@@ -58,12 +58,13 @@ const Contact = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
+      className="py-8"
     >
       <SectionWrapper className="flex flex-col md:flex-row md:justify-between items-center gap-10">
         <ContactHero />
       </SectionWrapper>
 
-      <SectionWrapper className="space-y-6 w-fit mx-auto">
+      <SectionWrapper className="space-y-6 flex flex-col items-center">
         <ContactForm
           formData={formData}
           handleChange={handleChange}

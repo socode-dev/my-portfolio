@@ -35,9 +35,9 @@ const ProjectShowcase = ({ project }) => {
           <button
             onClick={onNavigate}
             type="button"
-            className="p-0.5 border-2 border-[rgb(var(--color-brand))] rounded-full group hover:bg-[rgb(var(--color-brand))] transition cursor-pointer"
+            className="p-1 border-2 border-[rgb(var(--color-brand))] rounded-full group hover:bg-[rgb(var(--color-brand))] transition cursor-pointer"
           >
-            <HiArrowUpRight className="text-[12px] text-[rgb(var(--color-brand))] group-hover:text-white transition" />
+            <HiArrowUpRight className="text-[14px] text-[rgb(var(--color-brand))] group-hover:text-white transition" />
           </button>
         </div>
         <p className="text-base text-[rgb(var(--color-muted))] font-medium">
